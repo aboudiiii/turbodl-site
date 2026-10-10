@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* TurboDL — dark, single theme taken from the bot's armor-and-red-glow avatar.
+   Layout: RTL editorial sections separated by hairlines; one live chat mock as the hero proof. */
+:root {
+  --bg: #0c0b0e;
+  --bg-glass: rgba(12, 11, 14, 0.85);
+  --surface: #131216;
+  --line: #27242c;
+  --fg: #f2ede9;
+  --muted: #9b949c;
+  --red: #e5322d;
+  --red-soft: rgba(229, 50, 45, 0.12);
+  --glow: rgba(229, 50, 45, 0.28);
+  --bubble-me: #1f2a24;
+  --bubble-bot: #1a191e;
+  --font-display: "Alexandria", "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--bg); color: var(--fg); margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+summary::-webkit-details-marker { display: none; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
